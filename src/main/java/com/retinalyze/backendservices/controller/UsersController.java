@@ -3,6 +3,8 @@ package com.retinalyze.backendservices.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.retinalyze.backendservices.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,11 +17,16 @@ import com.retinalyze.backendservices.model.UsersFound;
 @RequestMapping("/users")
 public class UsersController {
 
+    private final UserService userService;
+
+    @Autowired
+    public UsersController (UserService userService) {
+        this.userService = userService;
+    }
+
     @RequestMapping("/find/{term}")
     private ResponseEntity<UsersFound> findUsers(@PathVariable("term") String term) {
-        List<User> users = new ArrayList<>();
-        users.add(new User(1, "mom@retinalyze.com"));
-        users.add(new User(2, "pmattioli@polyglot-outsourcing.com"));
+        List<User> users = userService.findUsers(term);
         return ResponseEntity.ok(new UsersFound(users));
     }
 
