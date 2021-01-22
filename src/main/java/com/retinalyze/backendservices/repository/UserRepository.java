@@ -1,6 +1,6 @@
 package com.retinalyze.backendservices.repository;
 
-import com.retinalyze.backendservices.model.User;
+import com.retinalyze.backendservices.model.db.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 

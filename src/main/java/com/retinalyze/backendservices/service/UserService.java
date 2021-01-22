@@ -1,6 +1,6 @@
 package com.retinalyze.backendservices.service;
 
-import com.retinalyze.backendservices.model.User;
+import com.retinalyze.backendservices.model.db.User;
 import com.retinalyze.backendservices.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserService implements UserDetailsService {

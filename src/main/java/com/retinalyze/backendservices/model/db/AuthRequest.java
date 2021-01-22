@@ -1,4 +1,4 @@
-package com.retinalyze.backendservices.model;
+package com.retinalyze.backendservices.model.db;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

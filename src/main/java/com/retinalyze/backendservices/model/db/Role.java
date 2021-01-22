@@ -1,4 +1,4 @@
-package com.retinalyze.backendservices.model;
+package com.retinalyze.backendservices.model.db;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,8 +13,6 @@ import javax.persistence.*;
 public class Role implements GrantedAuthority {
 
     public static final String USER_ADMIN = "Admin";
-    public static final String AUTHOR_ADMIN = "AUTHOR_ADMIN";
-    public static final String BOOK_ADMIN = "BOOK_ADMIN";
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

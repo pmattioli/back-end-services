@@ -1,7 +1,7 @@
 package com.retinalyze.backendservices.controller;
 
-import com.retinalyze.backendservices.model.AuthRequest;
-import com.retinalyze.backendservices.model.User;
+import com.retinalyze.backendservices.model.db.AuthRequest;
+import com.retinalyze.backendservices.model.db.User;
 import com.retinalyze.backendservices.security.JwtTokenUtil;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

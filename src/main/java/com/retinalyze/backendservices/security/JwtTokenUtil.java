@@ -1,6 +1,6 @@
 package com.retinalyze.backendservices.security;
 
-import com.retinalyze.backendservices.model.User;
+import com.retinalyze.backendservices.model.db.User;
 import io.jsonwebtoken.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
